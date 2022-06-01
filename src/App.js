@@ -7,22 +7,21 @@ function showForm() {
 }
 
 function showRecipes() {
-  var out_text = "";
+  var target = "";
   if (recipes.length < 1) {
-	  out_text = "<dl> There are no recipes to list </dl>";
-	 document.getElementById("recipe_list").innerHTML = out_text;
+	  target = "<dl> There are no recipes to list </dl>";
+	 document.getElementById("recipe_list").innerHTML = target;
   } else {
-	 out_text = "<ul>";
 	 for (let i = 0; i < recipes.length; i++) {
-	   out_text += "<li role='listitem'>" + recipes[i] + "</li>";
+	   target += "<li role='listitem'>" + recipes[i] + "</li>";
 	  }
-	  out_text += "</ul>";
-      document.getElementById("recipe_list").innerHTML = out_text;
+	  target += "</ul>";
+      document.getElementById("recipe_list").innerHTML = "<ul>" + target + "</ul>";
   }
 }
 
 function SubmitClicked() {
-  var rec_name = document.getElementById("rec_name").value;
+  var rec_name = document.getElementById("recipe-name").value;
   recipes.push(rec_name);
   showRecipes();
 }
