@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+	<div id="my_recipes">
+	    <h1 role="heading"> My Recipes </h1>
+	    <div id="recipe_list"></div>
+	</div>
+	<p>
+	<button id="add_recipe"> Add Recipe </button>
+
+	<form id="recipe_form">
+        <h2 id="lbl_add_rec">Add Recipe</h2>
+		<div id="div_rec_name">
+		    <label id="lbl_rec_name">Recipe Name
+			<input name="recipe-name" type="text" role="textbox"/>
+			</label>
+			<p></p>
+        </div>
+		<div id="div_rec_instrns">
+		    <label id="lbl_rec_instrns">Recipe Instructions
+			<input name="recipe-instructions" type="text" role="textbox"/>
+            </label>
+			<p></p>     
+	    </div>
+		<button id="submit" type="button">Submit</button>
+ 	</form>
+	
+	<p></p>
+	<div id="message"></div>
+  </body>
+</html>
